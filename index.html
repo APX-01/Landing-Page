@@ -1,13 +1,400 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("SChs7OFlW0S1_c8M3"); // reemplaza con tu user ID de EmailJS
+        })();
+    </script>
+
 </head>
 <body>
-    <!-- Subscribe to our newsletter -->
+
+<!-- Header -->
+<header>
+
+    <a href="#" class="logo">
+        <div class="logo-icon">
+            <img src="./images/logoEduHive.png" alt="Logo" />
+        </div>
+    </a>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#features">WHY EDUHIVE</a></li>
+            <li><a href="#testimonials">TESTIMONIES</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div class="auth-buttons">
+            <button class="login-btn">LOGIN</button>
+            <button class="register-btn">REGISTER</button>
+            <button class="settings-btn">
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Explore, Learn, Grow</h1>
+        <p class="hero-description">
+            "Access high-quality courses designed to boost your <br>
+            academic and professional growth, from anywhere, at any<br>
+            time."
+        </p>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search course ...">
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="./images/imagenInicio.png">
+    </div>
+
+</section>
+
+<!-- Main Feature Section -->
+<section class="features" id="features">
+    <div class="features-header">
+        <h2 class="features-title">Why choose EduHive?</h2>
+        <p class="features-subtitle">Explore a platform designed to help you learn faster, easier, and at your own pace.</p>
+    </div>
+
+    <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+            <img src="./images/icono1.png" alt="HD Videos" class="feature-image">
+            <div class="feature-content">
+                <h3 class="feature-number">+100K</h3>
+                <p class="feature-text">HD Videos</p>
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+            <img src="./images/icono2.png" alt="Professional Mentors" class="feature-image">
+            <div class="feature-content">
+                <h3 class="feature-number">+200</h3>
+                <p class="feature-text">Professional Mentors</p>
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+            <img src="./images/icono3.png" alt="Savings" class="feature-image">
+            <div class="feature-content">
+                <h3 class="feature-number">$500</h3>
+                <p class="feature-text">Saves per Month</p>
+            </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+            <img src="./images/icono4.png" alt="Lifetime Access" class="feature-image">
+            <div class="feature-content">
+                <h3 class="feature-number">Free</h3>
+                <p class="feature-text">Life Time Access</p>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<!-- Explore Courses Section -->
+<section class="explore-courses">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Explore Course</h2>
+            <p class="section-subtitle">Discover a wide variety of courses designed to help you grow your skills and achieve your goals. Start your learning journey today!</p>
+        </div>
+
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="./images/photography.png" alt="Photography" class="course-image">
+                <div class="course-overlay">
+                    <h3 class="course-title">Photography</h3>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./images/artificial-intelligence.png" alt="Artificial Intelligence" class="course-image">
+                <div class="course-overlay">
+                    <h3 class="course-title">Artificial Intelligence</h3>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./images/architect.png" alt="Architect" class="course-image">
+                <div class="course-overlay">
+                    <h3 class="course-title">Architect</h3>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./images/geography.png" alt="Geography" class="course-image">
+                <div class="course-overlay">
+                    <h3 class="course-title">Geography</h3>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="./images/art.png" alt="Art" class="course-image">
+                <div class="course-overlay">
+                    <h3 class="course-title">Art</h3>
+                </div>
+            </div>
+
+            <div class="course-card all-courses-card">
+                <h3 class="all-courses-title">ALL COURSE</h3>
+            </div>
+        </div>
+    </div>
+</section>
+  
+      <!-- Dream Section -->
+<section class="dream-section">
+    <div class="dream-color"></div>
+
+    <div class="dream-content">
+        <div class="dream-images">
+            <div class="dream-diamond dream-diamond-1">
+                <img src="./images/diamond1.png" alt="Student writing on blackboard">
+            </div>
+            <div class="dream-diamond dream-diamond-2">
+                <img src="./images/diamond2.png" alt="Student working on laptop">
+            </div>
+            <div class="dream-diamond dream-diamond-3">
+                <img src="./images/diamond3.png" alt="Math equations on blackboard">
+            </div>
+            <div class="dream-diamond dream-diamond-4">
+                <img alt="Math equations on blackboard">
+            </div>
+            <div class="dream-diamond dream-diamond-5">
+                <img alt="Math equations on blackboard">
+            </div>
+        </div>
+
+        <div class="dream-text">
+            <h2 class="dream-title">Take Your Knowledge<br>to the Next Level</h2>
+            <p class="dream-description">
+                Discover everything you can achieve with our educational platform.
+            </p>
+            <a href="#" class="dream-btn">START LEARNING</a>
+        </div>
+    </div>
+
+    </div>
+</section>
+  
+  
+  <!-- Contact us Section -->
+<div class="contact-container">
+    <div class="yellow-background"></div>
+    <div class="contact-wrapper">
+        <section class="contact-us">
+            <h1>Say Hello to Us</h1>
+
+            <p class="description">
+                "Tus ideas son importantes para nosotros.<br> Cuéntanos sobre tu proyecto completando este formulario y juntos encontraremos la mejor solución."
+            </p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name" class="required">What is your name?</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">What is your email?</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">What is your phone number?</label>
+                    <div class="phone-input">
+                        <span>+</span>
+                        <input type="tel" id="phone" name="phone" value="1234567890">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">What is your company?</label>
+                    <input type="text" id="company" name="company">
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Write your message here</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="required">I have read and accept the Terms of<br>Service & Privacy Policy</label>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+        </section>
+    </div>
+
+    <!-- Mensaje de agradecimiento (oculto inicialmente) -->
+    <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+        <div class="thank-you-content">
+            <h2>¡Gracias por contactarnos!</h2>
+            <p>Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.</p>
+            <button class="thank-you-close-btn">Cerrar</button>
+        </div>
+    </div>
+</div>
+  
+  <!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+
+        <div class="testimonials-carousel">
+            <div class="testimonials-track">
+                <!-- Testimonio 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/comilla.png" alt="Comilla" class="comilla-img">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">Aprendí desde las herramientas más utilizadas hasta la teoría del diseño mas usada en proyectos reales.</p>
+                        <div class="testimonial-author">
+                            <strong>María Sánchez</strong>
+                            <span>Diseño Gráfico y UX/UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/comilla.png" alt="Comilla" class="comilla-img">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">Los módulos eran claros y prácticos, y las actividades me ayudaron a aplicar lo aprendido.</p>
+                        <div class="testimonial-author">
+                            <strong>Luis Gómez</strong>
+                            <span>Marketing Digital para Principiantes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/comilla.png" alt="Comilla" class="comilla-img">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">Este curso de Ciencia de Datos es completo,está bien diseñado y bien formulado.</p>
+                        <div class="testimonial-author">
+                            <strong>Dr. Carlos Rivera</strong>
+                            <span>Ciencia de Datos Avanzada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/comilla.png" alt="Comilla" class="comilla-img">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">Los conceptos se explicaron de manera clara y estructurada, y pude aprender a mi propio ritmo.</p>
+                        <div class="testimonial-author">
+                            <strong>Ana Torres</strong>
+                            <span>Introducción a la Programación</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles del carrusel -->
+        <div class="carousel-controls">
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+  
+  <!-- Latest Update -->
+<section class="latest-updates" id="news">
+
+    <div class="container">
+        <h2 class="section-title">Latest Updates</h2>
+        <div class="updates-grid">
+            <!-- Columna izquierda: Actualizaciones -->
+            <div class="updates-container">
+                <!-- Columna de cursos -->
+                <div class="courses-column">
+                    <div class="course-item">
+                        <h3 class="course-title">Advanced cybersecurity</h3>
+                        <p class="course-desc">Hacking ético y protección de sistemas<br>OWASP, Kali Linux, Metasploit</p>
+                    </div>
+
+                    <div class="course-item">
+                        <h3 class="course-title">Data Science with Python</h3>
+                        <p class="course-desc">Análisis de datos y machine learning<br>Tecnologías: Pandas, NumPy, Matplotlib, Scikit-learn</p>
+                    </div>
+
+                    <div class="course-item">
+                        <h3 class="course-title">Full Stack development</h3>
+                        <p class="course-desc">Construcción de aplicaciones web completas<br>Tecnologías: React, Node.js, Express, MongoDB</p>
+                    </div>
+                </div>
+
+                <!-- Columna de fechas -->
+                <div class="dates-column">
+                    <div class="date-item">
+                        <span class="date-month">SEP</span>
+                        <span class="date-day">16</span>
+                        <span class="date-year">2022</span>
+                    </div>
+
+                    <div class="date-item">
+                        <span class="date-month">OCT</span>
+                        <span class="date-day">25</span>
+                        <span class="date-year">2023</span>
+                    </div>
+
+                    <div class="date-item">
+                        <span class="date-month">DEC</span>
+                        <span class="date-day">14</span>
+                        <span class="date-year">2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha: Video -->
+            <div class="video-column">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A4KnrbHVyIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yellow-rectangle"></div>
+</section>
+  
+<!-- Subscribe to our newsletter -->
 
 <section class="subscribe" style="background-image: url('images/biblioteca.jpg');" id="contact">
     <div class="newsletter-box">
@@ -22,6 +409,66 @@
         </form>
     </div>
 </section>
-    <script src="script.js"></script>
+  
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <img src="images/logoEduHive.png" alt="Logo Edu Hive" height="100px">
+                <div class="copyright">
+                    <p><i class="fas fa-copyright"></i> 2025 <strong>Eduhive</strong>. Diseñado con <i class="fas fa-heart" style="color: #ff0000;"></i> para la educación.</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 >COMPANY</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Mision</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 >SERVICES</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Online Courses</a></li>
+                    <li><a href="#">Challenges</a></li>
+                    <li><a href="#">Tutoring Services</a></li>
+                    <li><a href="#">Educational Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 >RESOURCES</h3>
+                <ul >
+                    <li ><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">E-books & Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <!-- Facebook, LinkedInd, Twitter,Instagram -->
+                <div class="icon-row">  <!-- Contenedor de la fila de iconos -->
+                    <div class="icon-item">
+                        <a href="#"><i class="fab fa-facebook"></i></a>  <!-- Icono 1 (ej: Font Awesome) -->
+
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>  <!-- Icono 2 -->
+
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>  <!-- Icono 3 -->
+
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><i class="fab fa-instagram"></i></a>  <!-- Icono 3 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      <script src="script.js"></script>
 </body>
 </html>
