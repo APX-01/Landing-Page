@@ -199,6 +199,68 @@
 </section>
   
   
+  <!-- Contact us Section -->
+<div class="contact-container">
+    <div class="yellow-background"></div>
+    <div class="contact-wrapper">
+        <section class="contact-us">
+            <h1>Say Hello to Us</h1>
+
+            <p class="description">
+                "Tus ideas son importantes para nosotros.<br> Cuéntanos sobre tu proyecto completando este formulario y juntos encontraremos la mejor solución."
+            </p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name" class="required">What is your name?</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">What is your email?</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">What is your phone number?</label>
+                    <div class="phone-input">
+                        <span>+</span>
+                        <input type="tel" id="phone" name="phone" value="1234567890">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">What is your company?</label>
+                    <input type="text" id="company" name="company">
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Write your message here</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="required">I have read and accept the Terms of<br>Service & Privacy Policy</label>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+        </section>
+    </div>
+
+    <!-- Mensaje de agradecimiento (oculto inicialmente) -->
+    <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+        <div class="thank-you-content">
+            <h2>¡Gracias por contactarnos!</h2>
+            <p>Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.</p>
+            <button class="thank-you-close-btn">Cerrar</button>
+        </div>
+    </div>
+</div>
+  
 <!-- Footer -->
 <footer>
     <div class="container">
@@ -258,6 +320,7 @@
                 </div>
             </div>
         </div>
+
 
 
 </body>
