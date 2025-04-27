@@ -1,14 +1,118 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("SChs7OFlW0S1_c8M3"); // reemplaza con tu user ID de EmailJS
+        })();
+    </script>
+
 </head>
 <body>
+<!-- Header -->
+<header>
 
-    <!-- Explore Courses Section -->
+    <a href="#" class="logo">
+        <div class="logo-icon">
+            <img src="./images/logoEduHive.png" alt="Logo" />
+        </div>
+    </a>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#features">WHY EDUHIVE</a></li>
+            <li><a href="#testimonials">TESTIMONIES</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div class="auth-buttons">
+            <button class="login-btn">LOGIN</button>
+            <button class="register-btn">REGISTER</button>
+            <button class="settings-btn">
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Explore, Learn, Grow</h1>
+        <p class="hero-description">
+            "Access high-quality courses designed to boost your <br>
+            academic and professional growth, from anywhere, at any<br>
+            time."
+        </p>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search course ...">
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="./images/imagenInicio.png">
+    </div>
+
+</section>
+
+<!-- Main Feature Section -->
+<section class="features" id="features">
+    <div class="features-header">
+        <h2 class="features-title">Why choose EduHive?</h2>
+        <p class="features-subtitle">Explore a platform designed to help you learn faster, easier, and at your own pace.</p>
+    </div>
+
+    <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+            <img src="./images/icono1.png" alt="HD Videos" class="feature-image">
+            <div class="feature-content">
+                <h3 class="feature-number">+100K</h3>
+                <p class="feature-text">HD Videos</p>
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+            <img src="./images/icono2.png" alt="Professional Mentors" class="feature-image">
+            <div class="feature-content">
+                <h3 class="feature-number">+200</h3>
+                <p class="feature-text">Professional Mentors</p>
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+            <img src="./images/icono3.png" alt="Savings" class="feature-image">
+            <div class="feature-content">
+                <h3 class="feature-number">$500</h3>
+                <p class="feature-text">Saves per Month</p>
+            </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+            <img src="./images/icono4.png" alt="Lifetime Access" class="feature-image">
+            <div class="feature-content">
+                <h3 class="feature-number">Free</h3>
+                <p class="feature-text">Life Time Access</p>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<!-- Explore Courses Section -->
 <section class="explore-courses">
     <div class="container">
         <div class="section-header">
@@ -58,7 +162,69 @@
         </div>
     </div>
 </section>
+  
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <img src="images/logoEduHive.png" alt="Logo Edu Hive" height="100px">
+                <div class="copyright">
+                    <p><i class="fas fa-copyright"></i> 2025 <strong>Eduhive</strong>. Diseñado con <i class="fas fa-heart" style="color: #ff0000;"></i> para la educación.</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 >COMPANY</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Mision</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 >SERVICES</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Online Courses</a></li>
+                    <li><a href="#">Challenges</a></li>
+                    <li><a href="#">Tutoring Services</a></li>
+                    <li><a href="#">Educational Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 >RESOURCES</h3>
+                <ul >
+                    <li ><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">E-books & Guides</a></li>
+                </ul>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="footer-column">
+                <!-- Facebook, LinkedInd, Twitter,Instagram -->
+                <div class="icon-row">  <!-- Contenedor de la fila de iconos -->
+                    <div class="icon-item">
+                        <a href="#"><i class="fab fa-facebook"></i></a>  <!-- Icono 1 (ej: Font Awesome) -->
+
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>  <!-- Icono 2 -->
+
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>  <!-- Icono 3 -->
+
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><i class="fab fa-instagram"></i></a>  <!-- Icono 3 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
