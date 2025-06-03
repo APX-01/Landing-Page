@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Landing Page</title>
+    <title>EduHive Landing Page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -29,32 +29,38 @@
 
     <nav>
         <ul class="nav-links">
-            <li><a href="#features">WHY EDUHIVE</a></li>
-            <li><a href="#testimonials">TESTIMONIES</a></li>
-            <li><a href="#news">NEWS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#features" data-i18n="features">WHY EDUHIVE</a></li>
+            <li><a href="#testimonials" data-i18n="testimonials">TESTIMONIES</a></li>
+            <li><a href="#news" data-i18n="news">NEWS</a></li>
+            <li><a href="#contact" data-i18n="contact">CONTACT</a></li>
         </ul>
 
         <div class="auth-buttons">
-            <button class="login-btn" onclick="window.location.href='https://frontend-web-applications-uatk.vercel.app/';">LOGIN</button>
-            <button class="register-btn">REGISTER</button>
+            <button class="login-btn" data-i18n="login-btn" onclick="window.location.href='https://frontend-web-applications-uatk.vercel.app/';">LOGIN</button>
+            <button class="register-btn" data-i18n="register-btn">REGISTER</button>
             <button class="settings-btn">
             </button>
         </div>
+
+        <div class="langs">
+            <a href="#" data-lang="english" class="active">ENG</a>
+            <a href="#" data-lang="spanish">ESP</a>
+        </div>
+
     </nav>
 </header>
 
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
-        <h1 class="hero-title">Explore, Learn, Grow</h1>
-        <p class="hero-description">
+        <h1 class="hero-title" data-i18n="hero-title">Explore, Learn, Grow</h1>
+        <p class="hero-description" data-i18n="hero-description">
             "Access high-quality courses designed to boost your <br>
             academic and professional growth, from anywhere, at any<br>
             time."
         </p>
         <div class="search-bar">
-            <input type="text" class="search-input" placeholder="Search course ...">
+            <input type="text" class="search-input" placeholder="" data-i18n-placeholder>
             <button class="search-btn">
                 <i class="fas fa-search"></i>
             </button>
@@ -70,8 +76,8 @@
 <!-- Main Feature Section -->
 <section class="features" id="features">
     <div class="features-header">
-        <h2 class="features-title">Why choose EduHive?</h2>
-        <p class="features-subtitle">Explore a platform designed to help you learn faster, easier, and at your own pace.</p>
+        <h2 class="features-title" data-i18n="features-title">Why choose EduHive?</h2>
+        <p class="features-subtitle" data-i18n="features-subtitle">Explore a platform designed to help you learn faster, easier, and at your own pace.</p>
     </div>
 
     <div class="features-grid">
@@ -80,7 +86,7 @@
             <img src="./images/icono1.png" alt="HD Videos" class="feature-image">
             <div class="feature-content">
                 <h3 class="feature-number">+100K</h3>
-                <p class="feature-text">HD Videos</p>
+                <p class="feature-text" data-i18n="feature1-text">HD Videos</p>
             </div>
         </div>
 
@@ -89,7 +95,7 @@
             <img src="./images/icono2.png" alt="Professional Mentors" class="feature-image">
             <div class="feature-content">
                 <h3 class="feature-number">+200</h3>
-                <p class="feature-text">Professional Mentors</p>
+                <p class="feature-text" data-i18n="feature2-text">Professional Mentors</p>
             </div>
         </div>
 
@@ -98,7 +104,7 @@
             <img src="./images/icono3.png" alt="Savings" class="feature-image">
             <div class="feature-content">
                 <h3 class="feature-number">$500</h3>
-                <p class="feature-text">Saves per Month</p>
+                <p class="feature-text" data-i18n="feature3-text">Saves per Month</p>
             </div>
         </div>
 
@@ -106,8 +112,8 @@
         <div class="feature-card">
             <img src="./images/icono4.png" alt="Lifetime Access" class="feature-image">
             <div class="feature-content">
-                <h3 class="feature-number">Free</h3>
-                <p class="feature-text">Life Time Access</p>
+                <h3 class="feature-number" data-i18n="feature-number">Free</h3>
+                <p class="feature-text" data-i18n="feature4-text">Life Time Access</p>
             </div>
         </div>
     </div>
@@ -117,48 +123,48 @@
 <section class="explore-courses">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Explore Course</h2>
-            <p class="section-subtitle">Discover a wide variety of courses designed to help you grow your skills and achieve your goals. Start your learning journey today!</p>
+            <h2 class="section-title" data-i18n="section-title">Explore Courses</h2>
+            <p class="section-subtitle" data-i18n="section-subtitle">Discover a wide variety of courses designed to help you grow your skills and achieve your goals. Start your learning journey today!</p>
         </div>
 
         <div class="courses-grid">
             <div class="course-card">
                 <img src="./images/photography.png" alt="Photography" class="course-image">
                 <div class="course-overlay">
-                    <h3 class="course-title">Photography</h3>
+                    <h3 class="course-title" data-i18n="course1-title">Photography</h3>
                 </div>
             </div>
 
             <div class="course-card">
                 <img src="./images/artificial-intelligence.png" alt="Artificial Intelligence" class="course-image">
                 <div class="course-overlay">
-                    <h3 class="course-title">Artificial Intelligence</h3>
+                    <h3 class="course-title" data-i18n="course2-title">Artificial Intelligence</h3>
                 </div>
             </div>
 
             <div class="course-card">
                 <img src="./images/architect.png" alt="Architect" class="course-image">
                 <div class="course-overlay">
-                    <h3 class="course-title">Architect</h3>
+                    <h3 class="course-title" data-i18n="course3-title">Architecture</h3>
                 </div>
             </div>
 
             <div class="course-card">
                 <img src="./images/geography.png" alt="Geography" class="course-image">
                 <div class="course-overlay">
-                    <h3 class="course-title">Geography</h3>
+                    <h3 class="course-title" data-i18n="course4-title">Geography</h3>
                 </div>
             </div>
 
             <div class="course-card">
                 <img src="./images/art.png" alt="Art" class="course-image">
                 <div class="course-overlay">
-                    <h3 class="course-title">Art</h3>
+                    <h3 class="course-title" data-i18n="course5-title">Art</h3>
                 </div>
             </div>
 
             <div class="course-card all-courses-card">
-                <h3 class="all-courses-title">ALL COURSE</h3>
+                <h3 class="all-courses-title" data-i18n="course6-title">ALL COURSE</h3>
             </div>
         </div>
     </div>
@@ -188,15 +194,14 @@
         </div>
 
         <div class="dream-text">
-            <h2 class="dream-title">Take Your Knowledge<br>to the Next Level</h2>
-            <p class="dream-description">
+            <h2 class="dream-title" data-i18n="dream-title">Take Your Knowledge<br>to the Next Level</h2>
+            <p class="dream-description" data-i18n="dream-description">
                 Discover everything you can achieve with our educational platform.
             </p>
-            <a href="#" class="dream-btn">START LEARNING</a>
+            <a href="#" class="dream-btn" data-i18n="dream-btn">START LEARNING</a>
         </div>
     </div>
 
-    </div>
 </section>
   
   
@@ -205,27 +210,27 @@
     <div class="yellow-background"></div>
     <div class="contact-wrapper">
         <section class="contact-us">
-            <h1>Say Hello to Us</h1>
+            <h1 data-i18n="contact-us">Say Hello to Us</h1>
 
-            <p class="description">
+            <p class="description" data-i18n="contact-description">
                 "Tus ideas son importantes para nosotros.<br> Cuéntanos sobre tu proyecto completando este formulario y juntos encontraremos la mejor solución."
             </p>
 
             <div class="form-row">
                 <div class="form-group">
-                    <label for="name" class="required">What is your name?</label>
+                    <label for="name" class="required" data-i18n="label-name">What is your name?</label>
                     <input type="text" id="name" name="name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">What is your email?</label>
+                    <label for="email" data-i18n="label-email">What is your email?</label>
                     <input type="email" id="email" name="email">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group">
-                    <label for="phone">What is your phone number?</label>
+                    <label for="phone" data-i18n="label-phone">What is your phone number?</label>
                     <div class="phone-input">
                         <span>+</span>
                         <input type="tel" id="phone" name="phone" value="1234567890">
@@ -233,39 +238,39 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="company">What is your company?</label>
+                    <label for="company" data-i18n="label-company">What is your company?</label>
                     <input type="text" id="company" name="company">
                 </div>
             </div>
 
             <div class="form-group full-width">
-                <label for="message">Write your message here</label>
+                <label for="message" data-i18n="label-message">Write your message here</label>
                 <textarea id="message" name="message"></textarea>
             </div>
 
             <div class="checkbox-group">
                 <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms" class="required">I have read and accept the Terms of<br>Service & Privacy Policy</label>
+                <label for="terms" class="required" data-i18n="terms">I have read and accept the Terms of<br>Service & Privacy Policy</label>
             </div>
 
-            <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+            <button type="submit" class="submit-btn" id="submitBtn" data-i18n="submit-btn">Send Message</button>
         </section>
     </div>
 
     <!-- Mensaje de agradecimiento (oculto inicialmente) -->
     <div id="thankYouMessage" class="thank-you-message" style="display: none;">
         <div class="thank-you-content">
-            <h2>¡Gracias por contactarnos!</h2>
-            <p>Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.</p>
-            <button class="thank-you-close-btn">Cerrar</button>
+            <h2 data-i18n="thank-you1">¡Gracias por contactarnos!</h2>
+            <p data-i18n="thank-you2">Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.</p>
+            <button class="thank-you-close-btn" data-i18n="thank-you-btn">Cerrar</button>
         </div>
-    </div>
+    </div>
 </div>
   
   <!-- Testimonials -->
 <section class="testimonials" id="testimonials">
     <div class="container">
-        <h2 class="section-title">Testimonials</h2>
+        <h2 class="section-title" data-i18n="testimonials-title">Testimonials</h2>
 
         <div class="testimonials-carousel">
             <div class="testimonials-track">
@@ -275,10 +280,10 @@
                         <img src="images/comilla.png" alt="Comilla" class="comilla-img">
                     </div>
                     <div class="testimonial-content">
-                        <p class="testimonial-text">Aprendí desde las herramientas más utilizadas hasta la teoría del diseño mas usada en proyectos reales.</p>
+                        <p class="testimonial-text" data-i18n="testimonial-text1">Aprendí desde las herramientas más utilizadas hasta la teoría del diseño mas usada en proyectos reales.</p>
                         <div class="testimonial-author">
                             <strong>María Sánchez</strong>
-                            <span>Diseño Gráfico y UX/UI</span>
+                            <span data-i18n="testimonial-profession1">Diseño Gráfico y UX/UI</span>
                         </div>
                     </div>
                 </div>
@@ -289,10 +294,10 @@
                         <img src="images/comilla.png" alt="Comilla" class="comilla-img">
                     </div>
                     <div class="testimonial-content">
-                        <p class="testimonial-text">Los módulos eran claros y prácticos, y las actividades me ayudaron a aplicar lo aprendido.</p>
+                        <p class="testimonial-text" data-i18n="testimonial-text2">Los módulos eran claros y prácticos, y las actividades me ayudaron a aplicar lo aprendido.</p>
                         <div class="testimonial-author">
                             <strong>Luis Gómez</strong>
-                            <span>Marketing Digital para Principiantes</span>
+                            <span data-i18n="testimonial-profession2">Marketing Digital para Principiantes</span>
                         </div>
                     </div>
                 </div>
@@ -303,10 +308,10 @@
                         <img src="images/comilla.png" alt="Comilla" class="comilla-img">
                     </div>
                     <div class="testimonial-content">
-                        <p class="testimonial-text">Este curso de Ciencia de Datos es completo,está bien diseñado y bien formulado.</p>
+                        <p class="testimonial-text" data-i18n="testimonial-text3">Este curso de Ciencia de Datos es completo,está bien diseñado y bien formulado.</p>
                         <div class="testimonial-author">
                             <strong>Dr. Carlos Rivera</strong>
-                            <span>Ciencia de Datos Avanzada</span>
+                            <span data-i18n="testimonial-profession3">Ciencia de Datos Avanzada</span>
                         </div>
                     </div>
                 </div>
@@ -317,10 +322,10 @@
                         <img src="images/comilla.png" alt="Comilla" class="comilla-img">
                     </div>
                     <div class="testimonial-content">
-                        <p class="testimonial-text">Los conceptos se explicaron de manera clara y estructurada, y pude aprender a mi propio ritmo.</p>
+                        <p class="testimonial-text" data-i18n="testimonial-text4">Los conceptos se explicaron de manera clara y estructurada, y pude aprender a mi propio ritmo.</p>
                         <div class="testimonial-author">
                             <strong>Ana Torres</strong>
-                            <span>Introducción a la Programación</span>
+                            <span data-i18n="testimonial-profession4">Introducción a la Programación</span>
                         </div>
                     </div>
                 </div>
@@ -339,25 +344,25 @@
 <section class="latest-updates" id="news">
 
     <div class="container">
-        <h2 class="section-title">Latest Updates</h2>
+        <h2 class="section-title" data-i18n="lastest-updates">Latest Updates</h2>
         <div class="updates-grid">
             <!-- Columna izquierda: Actualizaciones -->
             <div class="updates-container">
                 <!-- Columna de cursos -->
                 <div class="courses-column">
                     <div class="course-item">
-                        <h3 class="course-title">Advanced cybersecurity</h3>
-                        <p class="course-desc">Hacking ético y protección de sistemas<br>OWASP, Kali Linux, Metasploit</p>
+                        <h3 class="course-title" data-i18n="course-title1">Advanced cybersecurity</h3>
+                        <p class="course-desc" data-i18n="course-desc1">Hacking ético y protección de sistemas<br>OWASP, Kali Linux, Metasploit</p>
                     </div>
 
                     <div class="course-item">
-                        <h3 class="course-title">Data Science with Python</h3>
-                        <p class="course-desc">Análisis de datos y machine learning<br>Tecnologías: Pandas, NumPy, Matplotlib, Scikit-learn</p>
+                        <h3 class="course-title" data-i18n="course-title2">Data Science with Python</h3>
+                        <p class="course-desc" data-i18n="course-desc2">Análisis de datos y machine learning<br>Tecnologías: Pandas, NumPy, Matplotlib, Scikit-learn</p>
                     </div>
 
                     <div class="course-item">
-                        <h3 class="course-title">Full Stack development</h3>
-                        <p class="course-desc">Construcción de aplicaciones web completas<br>Tecnologías: React, Node.js, Express, MongoDB</p>
+                        <h3 class="course-title" data-i18n="course-title3">Full Stack development</h3>
+                        <p class="course-desc" data-i18n="course-desc3">Construcción de aplicaciones web completas<br>Tecnologías: React, Node.js, Express, MongoDB</p>
                     </div>
                 </div>
 
@@ -398,18 +403,19 @@
 
 <section class="subscribe" style="background-image: url('images/biblioteca.jpg');" id="contact">
     <div class="newsletter-box">
-        <h3>Subscribe to our newsletter</h3>
-        <p>Leave your email and we will send you details about our educational courses and programs.</p>
+        <h3 data-i18n="subscribe-title">Subscribe to our newsletter</h3>
+        <p data-i18n="subscribe-desc">Leave your email and we will send you details about our educational courses and programs.</p>
 
         <form class="email-form" action="https://formsubmit.co/u202122484@upc.edu.pe" method="POST" id="newsletter-form">
-            <input type="email" name="email" id="user-email" placeholder="Enter your email address" required>
+            <input type="email" name="email" id="user-email" data-i18n-placeholder-newsletter required>
 
             <!-- Botón -->
-            <button type="submit">Subscribe</button>
+            <button type="submit" data-i18n="subscribe-btn">Subscribe</button>
         </form>
     </div>
 </section>
-  
+
+
 <!-- Footer -->
 <footer>
     <div class="container">
@@ -417,33 +423,33 @@
             <div class="footer-column">
                 <img src="images/logoEduHive.png" alt="Logo Edu Hive" height="100px">
                 <div class="copyright">
-                    <p><i class="fas fa-copyright"></i> 2025 <strong>Eduhive</strong>. Diseñado con <i class="fas fa-heart" style="color: #ff0000;"></i> para la educación.</p>
+                    <p data-i18n="footer-copyright"></p>
                 </div>
             </div>
             <div class="footer-column">
-                <h3 >COMPANY</h3>
+                <h3 data-i18n="footer-company">COMPANY</h3>
                 <ul class="footer-links">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Mision</a></li>
-                    <li><a href="#">Vision</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" data-i18n="footer-about-us">About us</a></li>
+                    <li><a href="#" data-i18n="footer-mission">Mission</a></li>
+                    <li><a href="#" data-i18n="footer-vision">Vision</a></li>
+                    <li><a href="#" data-i18n="footer-contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h3 >SERVICES</h3>
+                <h3 data-i18n="footer-services">SERVICES</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Online Courses</a></li>
-                    <li><a href="#">Challenges</a></li>
-                    <li><a href="#">Tutoring Services</a></li>
-                    <li><a href="#">Educational Consulting</a></li>
+                    <li><a href="#" data-i18n="footer-online-courses">Online Courses</a></li>
+                    <li><a href="#" data-i18n="footer-challenges">Challenges</a></li>
+                    <li><a href="#" data-i18n="footer-tutoring">Tutoring Services</a></li>
+                    <li><a href="#" data-i18n="footer-consulting">Educational Consulting</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h3 >RESOURCES</h3>
-                <ul >
-                    <li ><a href="#">Blog</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">E-books & Guides</a></li>
+                <h3 data-i18n="footer-resources">RESOURCES</h3>
+                <ul>
+                    <li><a href="#" data-i18n="footer-blog">Blog</a></li>
+                    <li><a href="#" data-i18n="footer-help-center">Help Center</a></li>
+                    <li><a href="#" data-i18n="footer-ebooks">E-books & Guides</a></li>
                 </ul>
             </div>
 
@@ -469,6 +475,10 @@
                 </div>
             </div>
         </div>
-      <script src="script.js"></script>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

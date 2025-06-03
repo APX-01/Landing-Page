@@ -119,6 +119,33 @@ nav {
     color: #333;
 }
 
+.langs{
+    background: #fff;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 12px 24px;
+}
+
+.langs a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background: #F4BE1D;
+    font-weight: 650;
+    transition: .3s linear;
+    border-radius: 5px;
+}
+
+.langs a:hover {
+    background: #333;
+    color: #F4BE1D;
+}
+
+.langs a:active {
+    background: #b8911a;
+    color: #fff;
+}
+
 /* Hero section */
 .hero {
     display: flex;
