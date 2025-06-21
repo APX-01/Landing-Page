@@ -28,25 +28,28 @@
     </a>
 
     <nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
         <ul class="nav-links">
             <li><a href="#features" data-i18n="features">WHY EDUHIVE</a></li>
             <li><a href="#testimonials" data-i18n="testimonials">TESTIMONIES</a></li>
             <li><a href="#news" data-i18n="news">NEWS</a></li>
             <li><a href="#contact" data-i18n="contact">CONTACT</a></li>
+            <li>
+                <div class="langs">
+                    <a href="#" data-lang="english" class="navbar-btn active">ENG</a>
+                    <a href="#" data-lang="spanish" class="navbar-btn">ESP</a>
+                </div>
+            </li>
+            <li>
+                <button class="navbar-btn darkMode" id="darkMode">
+                    <span data-i18n="dark-mode-dark"></span>
+                </button>
+            </li>
         </ul>
 
-        <div class="auth-buttons">
-            <button class="login-btn" data-i18n="login-btn" onclick="window.location.href='https://frontend-web-applications-uatk.vercel.app/';">LOGIN</button>
-            <button class="register-btn" data-i18n="register-btn">REGISTER</button>
-            <button class="settings-btn">
-            </button>
-        </div>
-
-        <div class="langs">
-            <a href="#" data-lang="english" class="active">ENG</a>
-            <a href="#" data-lang="spanish">ESP</a>
-        </div>
-
+        <button class="navbar-btn login-btn" data-i18n="login-btn" onclick="window.location.href='https://frontend-web-applications-uatk.vercel.app/';">LOGIN</button>
     </nav>
 </header>
 
@@ -115,6 +118,21 @@
                 <h3 class="feature-number" data-i18n="feature-number">Free</h3>
                 <p class="feature-text" data-i18n="feature4-text">Life Time Access</p>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- About the Product Section -->
+<section class="about-product-section">
+    <div class="about-product-container">
+        <div class="about-product-text">
+            <h2 data-i18n="about-product-title">About the Product</h2>
+            <p data-i18n="about-product-desc">
+                EduHive es una plataforma educativa innovadora diseñada para potenciar tu aprendizaje con recursos interactivos, cursos de alta calidad y una experiencia personalizada.
+            </p>
+        </div>
+        <div class="about-product-video">
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/bf2tFixliMA" title="YouTube video" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </section>
@@ -203,7 +221,17 @@
     </div>
 
 </section>
-  
+
+<!-- About the Team Section -->
+<section class="about-team-section">
+    <h2 class="about-team-title" data-i18n="about-team-title">Conócenos</h2>
+    <p class="about-team-desc" data-i18n="about-team-desc">
+        Somos un equipo apasionado por la educación y la tecnología.
+    </p>
+    <div class="about-team-video">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/bf2tFixliMA" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
   
   <!-- Contact us Section -->
 <div class="contact-container">

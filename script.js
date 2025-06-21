@@ -1,4 +1,3 @@
-// JavaScript para funcionalidad básica
 document.addEventListener('DOMContentLoaded', function() {
 
     const prevButton = document.querySelector('.carousel-prev');
@@ -8,11 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
 
     const totalCards = cards.length;
-
-
-
-
-
 
     const moveCarousel = (direction) => {
         if (direction === 'next') {
@@ -37,7 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
     nextButton.addEventListener('click', () => moveCarousel('next'));
 
 
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+        });
+    });
 
 
     // Configurar el botón de enviar
@@ -59,19 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    const menuToggle = document.createElement('div');
-    menuToggle.className = 'mobile-menu-toggle';
-    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-    document.querySelector('header').appendChild(menuToggle);
-
-    const navLinks = document.querySelector('.nav-links');
-    const authButtons = document.querySelector('.auth-buttons');
-
-    menuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-        authButtons.classList.toggle('active');
-    });
-
     // Cerrar menú al hacer clic en un enlace
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', function() {
@@ -79,14 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             authButtons.classList.remove('active');
         });
     });
-
-
-
-
-
-
 });
-
 
 const translations = {
     english: {
@@ -96,6 +80,8 @@ const translations = {
         "contact": "CONTACT",
         "login-btn": "LOGIN",
         "register-btn": "REGISTER",
+        "dark-mode-dark": "Dark mode",
+        "dark-mode-light": "Light mode",
         "hero-title": "Explore, Learn, Grow",
         "hero-description": "&quot;Access high-quality courses designed to boost your academic<br>and professional growth, from anywhere,<br>at any time.&quot;",
         "search-placeholder": "Search course ...",
@@ -106,6 +92,12 @@ const translations = {
         "feature3-text": "Saves per Month",
         "feature4-text": "Life Time Access",
         "feature-number": "Free",
+
+        "about-product-title": "About the Product",
+        "about-product-desc": "EduHive is an innovative educational platform designed to boost your learning with interactive resources, high-quality courses, and a personalized experience.",
+        "about-team-title": "Meet the Team",
+        "about-team-desc": "We are a team passionate about education and technology.",
+
         "section-title": "Explore Courses",
         "section-subtitle": "Discover a wide variety of courses designed to help you grow your skills and achieve your goals. Start your learning journey today!",
         "course1-title": "Photography",
@@ -178,6 +170,8 @@ const translations = {
         "contact": "CONTACTO",
         "login-btn": "INICIAR SESIÓN",
         "register-btn": "REGISTRARSE",
+        "dark-mode-dark": "Modo: oscuro",
+        "dark-mode-light": "Modo: claro",
         "hero-title": "Explora, Aprende, Crece",
         "hero-description": "Accede a cursos de alta calidad diseñados para impulsar tu crecimiento<br>académico y profesional, desde cualquier lugar,<br>en cualquier momento.",
         "search-placeholder": "Buscar curso ...",
@@ -188,6 +182,12 @@ const translations = {
         "feature3-text": "Ahorros por Mes",
         "feature4-text": "Acceso de por Vida",
         "feature-number": "Gratis",
+
+        "about-product-title": "Sobre el producto",
+        "about-product-desc": "EduHive es una plataforma educativa innovadora diseñada para potenciar tu aprendizaje con recursos interactivos, cursos de alta calidad y una experiencia personalizada.",
+        "about-team-title": "Conócenos",
+        "about-team-desc": "Somos un equipo apasionado por la educación y la tecnología.",
+
         "section-title": "Explora Cursos",
         "section-subtitle": "Descubre una amplia variedad de cursos diseñados para ayudarte a desarrollar tus habilidades y alcanzar tus metas. ¡Comienza tu viaje de aprendizaje hoy!",
         "course1-title": "Fotografía",
@@ -255,9 +255,10 @@ const translations = {
     }
 };
 
-const langsLinks = document.querySelectorAll('.langs a');
+const langsLinks = document.querySelectorAll('.langs .navbar-btn');
 
 function setLanguage(lang) {
+    currentLang = lang;
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         el.innerHTML = translations[lang][key];
@@ -270,6 +271,7 @@ function setLanguage(lang) {
     if (newsletterInput) {
         newsletterInput.placeholder = translations[lang]['newsletter-placeholder'];
     }
+    updateDarkModeButton();
 }
 
 langsLinks.forEach(link => {
@@ -283,3 +285,26 @@ langsLinks.forEach(link => {
 });
 
 setLanguage(document.querySelector('.langs .active').getAttribute('data-lang'));
+
+
+// DarkMode
+
+let body = document.querySelector('body');
+let darkMode = document.getElementById('darkMode');
+
+let darkModeVan = true;
+darkMode.addEventListener('click', function(){
+    body.classList.toggle('dark');
+    darkModeVan = !darkModeVan;
+    updateDarkModeButton();
+});
+
+function updateDarkModeButton() {
+    const darkModeBtn = document.getElementById('darkMode');
+    const isDark = document.body.classList.contains('dark');
+    const key = isDark ? 'dark-mode-light' : 'dark-mode-dark';
+    darkModeBtn.innerHTML = `<span data-i18n="${key}">${translations[currentLang][key]}</span>`;
+}
+
+setLanguage(currentLang);
+updateDarkModeButton();
