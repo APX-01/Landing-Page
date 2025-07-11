@@ -793,12 +793,12 @@ nav {
     position: relative;
     max-width: 700px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 80px 30px 30px 30px;
 }
 
 .yellow-background {
     position: absolute;
-    top: 15px;
+    top: 80px;
     left: 15px;
     right: -15px;
     bottom: 30px;
@@ -1227,9 +1227,9 @@ footer {
 
 /* Modo oscuro global */
 .dark, .dark * {
-    background-color: #232323 !important;
+    background-color: #232323;
     color: #fff !important;
-    border-color: #444 !important;
+    border-color: #444;
 }
 
 .dark .yellow-background,
@@ -1248,11 +1248,6 @@ footer {
 
 .dark .nav-links a:hover:not(.darkMode *) {
     color: #F4BE1D !important;
-}
-
-.dark .dream-diamond-4,
-.dark .dream-diamond-5{
-    background-color: #ecd590 !important;
 }
 
 .dark button,
@@ -1328,6 +1323,151 @@ footer {
 .dark .features-title,
 .dark .section-title {
     color: #fff !important;
+}
+
+.dark .dream-section,
+.dark .dream-content,
+.dark .dream-text,
+.dark .dream-title,
+.dark .dream-description,
+.dark .dream-images{
+    background: transparent !important;
+    color: #000 !important;
+}
+
+.dark .dream-color {
+    background-color: #ecd590 !important;
+}
+
+.dark .dream-diamond img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transform: rotate(-45deg) scale(1.2);
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    background-color: #F4BE1D !important;
+}
+
+.dark .dream-diamond-1 {
+    top: -30px;
+    left: 100px;
+    background-color: #F4BE1D !important;
+}
+
+.dark .dream-diamond-2 {
+    top: 200px;
+    left: -150px;
+    width: 150px;
+    height: 150px;
+    background-color: #F4BE1D !important;
+}
+
+.dark .dream-diamond-3 {
+    top: 300px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: #F4BE1D !important;
+}
+
+.dark .dream-diamond-4 {
+    top: -20px;
+    left: -120px;
+    width: 80px;
+    height: 80px;
+    background-color: #F4BE1D !important;
+}
+
+.dark .dream-diamond-5 {
+    top: 420px;
+    left: 1300px;
+    width: 100px;
+    height: 100px;
+    background-color: #F4BE1D !important;
+}
+
+.dark .yellow-rectangle {
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
+    width: 90%;
+    height: 80%;
+    border: 5px solid #F6BE1F !important;
+    background: transparent !important;
+    border-radius: 200px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.dark .latest-updates,
+.dark .section-title,
+.dark .updates-grid,
+.dark .updates-container,
+.dark .courses-column,
+.dark .dates-column,
+.dark .course-item,
+.dark .course-title,
+.dark .course-desc,
+.dark .date-item,
+.dark .date-month,
+.dark .date-day,
+.dark .date-year,
+.dark .video-column,
+.dark .video-wrapper {
+    background: transparent !important;
+}
+
+.dark .container {
+    background: transparent !important;
+}
+
+.dark .yellow-background {
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    right: -15px;
+    bottom: 30px;
+    background-color: #F6BE1F !important;
+    border-radius: 12px;
+    z-index: -1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: rotate(-5deg);
+    transform-origin: center center;
+}
+
+.dark .contact-wrapper {
+    background-color: #2B2B2B !important;
+}
+
+.dark .contact-wrapper > * {
+    background: transparent !important;
+}
+.dark .contact-wrapper * {
+    background: transparent !important;
+}
+
+.dark .contact-container {
+    background: transparent !important;
+}
+
+.dark .contact-us .submit-btn {
+    background-color: #F6BE1F !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+}
+
+.dark .contact-us .submit-btn:hover {
+    background-color: #333 !important;
 }
 
 /* Responsive */
